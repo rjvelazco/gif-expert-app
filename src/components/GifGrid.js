@@ -23,7 +23,7 @@ export const GifGrid = ({ category }) => {
     useEffect(() => {
         getGifs()
             .then( resp => console.log(resp));
-    }, [category])
+    }, [])
     getGifs();
     return (
         <div>
