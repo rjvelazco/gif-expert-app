@@ -1,7 +1,8 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 
 export const GifGrid = ({ category }) => {
     const api_key = 'GyTgDRvJi4SIjxKQSRDSKA5CNussIOTV';
+    
     const getGifs = async () => {
 
         const url = `https://api.giphy.com/v1/gifs/search?q=${category}&limit=10&api_key=${api_key}`;
@@ -16,9 +17,13 @@ export const GifGrid = ({ category }) => {
             }
         })
 
-        console.log(gifs);
-
+        return gifs;
     }
+
+    useEffect(() => {
+        getGifs()
+            .then( resp => console.log(resp));
+    }, [category])
     getGifs();
     return (
         <div>
