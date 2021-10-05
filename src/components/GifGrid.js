@@ -1,5 +1,5 @@
 import React from 'react';
-import { GifGridItem } from '../GifGridItem';
+import { GifGridItem } from './GifGridItem';
 import { useFetchGifs } from '../hooks/useFetchGifs';
 
 export const GifGrid = ({ category }) => {
@@ -8,11 +8,11 @@ export const GifGrid = ({ category }) => {
 
     return (
         <>
-            <h3>{ category }</h3>
+            <h3 className="card-grid animate__animated animate__fadeIn">{ category }</h3>
 
-            { loading && <p>Loading</p> }
+            { loading && <p className="card-grid animate__animated flash">Loading</p> }
 
-            <div className="card-grid">
+            <div className="card-grid animate__animated animate__fadeIn">
                 { 
                     images.map((img) => (
                         <GifGridItem
