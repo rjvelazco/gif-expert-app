@@ -1,11 +1,11 @@
 import React from 'react'
 
-export const GifGridItem = ({title, url}) => {
-    console.table({title, url});
+export const GifGridItem = ({category, title, url}) => {
+    const repTitle =  `${category } - gif`.toUpperCase();
     return (
-        <div>
+        <div className="card">
             <img src={url} alt={title} />
-            <p>{ title }</p>
+            <p>{ title ? title : repTitle }</p>
         </div>
     )
 }
