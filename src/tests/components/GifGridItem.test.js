@@ -3,7 +3,7 @@ import { shallow } from 'enzyme';
 
 import { GifGridItem } from '../../components/GifGridItem';
 
-describe('Tests in <GifGridItem />', () => {
+describe('Tests on <GifGridItem />', () => {
 
     const title = 'Title';
     const url = 'https://localhost/algo.jpg';
