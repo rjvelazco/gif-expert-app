@@ -1,34 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<MyComponent /> should render GrifGridItem Component 1`] = `
-<div
-  className="card"
->
-  <img
-    alt="Title"
-    src="https://localhost/algo.jpg"
-  />
-  <p>
-    Title
-  </p>
-</div>
-`;
-
-exports[`Tests in <GifGridItem /> It should render GrifGridItem Component Correctly 1`] = `
-<div
-  className="card"
->
-  <img
-    alt="Title"
-    src="https://localhost/algo.jpg"
-  />
-  <p>
-    Title
-  </p>
-</div>
-`;
-
-exports[`Tests in <GifGridItem /> should render GrifGridItem Component 1`] = `
+exports[`Tests on <GifGridItem /> It should render GrifGridItem Component Correctly 1`] = `
 <div
   className="card"
 >
