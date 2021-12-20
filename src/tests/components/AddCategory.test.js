@@ -51,7 +51,8 @@ describe('Tests on <AddCategory />', () => {
         });
 
         // 3. setCategories se debe de haber llamado
-        expect( setCategories ).toHaveBeenCalled();
+        expect( setCategories ).toHaveBeenCalledTimes(1);
+        expect( setCategories ).toHaveBeenCalledWith( expect.any( Function ) );
 
         // 4. el valor del input debe estar ''
         expect(  wrapper.find('input').prop('value') ).toBe( '' );
